@@ -1,41 +1,42 @@
 Mashup Generation & Web Service Pipeline
 
 ## 1. Methodology
-
+```
 ┌──────────────────────┐
 │ User Input Capture   │
 │ (CLI / Web Form)     │
 └─────────┬────────────┘
-                    ↓
+          ↓
 ┌────────────────────────────┐
 │ Input Validation           │
 │ (Parameter & Email Check)  │
 └─────────┬──────────────────┘
-                    ↓
+          ↓
 ┌────────────────────────────┐
 │ YouTube Search &           │
 │ Audio Download (PyTube)    │
 └─────────┬──────────────────┘
-                    ↓
+          ↓
 ┌────────────────────────────┐
 │ Audio Extraction           │
 │ & Pre-processing           │
 └─────────┬──────────────────┘
-                    ↓
+          ↓
 ┌────────────────────────────┐
 │ Audio Trimming             │
 │ (First Y Seconds)          │
 └─────────┬──────────────────┘
-                    ↓
+          ↓
 ┌────────────────────────────┐
 │ Audio Merging              │
 │ (Mashup Creation)          │
 └─────────┬──────────────────┘
-                    ↓
+          ↓
 ┌────────────────────────────┐
 │ ZIP Packaging              │
 │ & Email Delivery           │
 └────────────────────────────┘
+```
 
 The methodology follows a modular automation pipeline where user input is validated, audio is programmatically downloaded, processed, trimmed, merged into a mashup, compressed into a ZIP archive, and delivered via email. The core mashup logic is implemented once (Program 1) and reused in a web service layer (Program 2), demonstrating clean separation of concerns.
 
