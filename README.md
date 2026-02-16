@@ -79,10 +79,21 @@ python 102303112.py "Sharry Maan" 20 30 output.mp3
 - Trimmed audio segments (Y seconds each)
 - Combined AudioSegment object
 
+
 **Output:**
-- Generated mashup file (`output.mp3`)
+- The program downloads and produces a mashup audio file named `output.mp3` in the project folder.
 - Zipped result (`result.zip`)
 - Email delivery of ZIP file
+
+## Screenshots
+
+Below are example screenshots of the CLI and Web UI:
+
+### CLI Example
+![CLI Example](screenshots/cli.png)
+
+### Web UI Example
+![Web UI Example](screenshots/ui.png)
 
 ## 4. Execution Environment
 
